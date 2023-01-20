@@ -35,7 +35,6 @@ li {
   color: white;
   font-size: 1.5em;
   line-height: 1.5;
-  display: flex;
 }
 
 li:before {
@@ -67,13 +66,11 @@ li button:hover {
   width: 800px;
   margin: 0 auto;
   margin-top: 40px;
-  display: flex;
 }
 @media screen and (max-width: 600px) {
     .todos {
       width: 90%;
       font-size: small;
-      display: flex;
       }
     
 }
