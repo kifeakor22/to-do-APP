@@ -12,6 +12,7 @@ body {
 
 input {
   height: 50px;
+  display: flex;
   width: 100%;
   padding: 6px;
   margin-top: 10px;
