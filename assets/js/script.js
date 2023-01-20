@@ -5,7 +5,7 @@ var todoCountSpan = document.querySelector("#todo-count");
 var button;
 
 var todos = [];
-localStorage.setItem("todo",JSON.stringify(todos))  
+ 
 
 renderTodos();
 
@@ -34,6 +34,7 @@ function renderTodos() {
       todos.splice(j, 1)
       renderTodos()
 })
+localStorage.setItem("todo",JSON.stringify(todos))
 
   }  
 }
@@ -58,6 +59,7 @@ todoForm.addEventListener("submit", function(event) {
 });
 
 init = function (){
+   
   storedTodos = JSON.parse(localStorage.getItem("todo"))
   if(storedTodos) {
     todos = storedTodos
